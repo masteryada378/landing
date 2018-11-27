@@ -1,0 +1,23 @@
+.button{
+    display: inline-block;
+    padding: 8px 21px 7px;
+    border-radius: 3px;
+    color: white;
+    transition: 0.5s;
+    
+    &--red{
+        background-color: $theme-color;
+        
+        &:hover{
+            background: lighten($theme-color, 7%)
+        }
+    }
+
+    &--yellow{
+        background-color: #f8cd53;
+
+        &:hover{
+            background: lighten( #f8cd53, 7%)
+        }
+    }
+}

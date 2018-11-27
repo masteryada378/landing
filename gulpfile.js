@@ -8,6 +8,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Настройка сервера
 gulp.task('server', ()=>{
@@ -30,7 +31,7 @@ gulp.task('pug', ()=>{
                 .pipe(gulp.dest('build'))
 })
 
-//коомпеляция css
+//коомпеляция css       вписать сюда!!!
 gulp.task('scss', ()=>{
     return gulp.src('source/styles/main.scss')
                 .pipe(
@@ -40,8 +41,13 @@ gulp.task('scss', ()=>{
                 .pipe(
                     rename('main.min.css')   
                 )
+                .pipe(autoprefixer({
+                    browsers: ['last 7 version'],
+                    cascade: false
+                }))
                 .pipe(gulp.dest('build/css'))
 })
+
 
 //- JS 
 

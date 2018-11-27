@@ -1,0 +1,30 @@
+.about{
+    padding: 72px 0 85px;
+    text-align: center;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 50px 0 50px;
+    }
+
+    &__item{
+        width: 27%;
+    }
+
+    &__subtitle{
+        font-size: 1.375rem;
+        font-family: $ff-main-bold;
+        color: $text-main;
+        margin: 0;
+    }
+
+    &__description{
+        color: #5c5c5c;
+        font-size: 0.89rem;
+        line-height: 1.5;
+        margin-top: 8px;
+    }
+}
+
+

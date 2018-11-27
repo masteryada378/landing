@@ -1,0 +1,34 @@
+.menu{
+    display: inline-block;
+    margin-right: -6px;
+
+    &__link{
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $text-main;
+        font-family: $ff-main-bold;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 10px;
+
+        &--active,
+        &:hover{
+            color: $theme-color;
+        }
+
+        &:after{
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 5px;
+            height: 5px;
+            background-color: $text-main;
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+
+        &:last-child:after{
+            display: none;
+        }
+    }
+}

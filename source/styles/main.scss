@@ -1,0 +1,15 @@
+@import "global/fonts.scss";
+@import "global/vars.scss";
+@import "global/mixins.scss";
+@import "global/base.scss"; 
+@import "global/sprite.scss";
+@import "global/common.scss";
+@import "global/button.scss";
+@import "global/title.scss";
+@import "global/icons.scss";
+
+
+@import 'sections/header.scss';
+@import 'sections/nav.scss';
+@import "sections/banner.scss";
+@import "sections/about.scss";

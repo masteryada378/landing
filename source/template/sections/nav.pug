@@ -1,0 +1,8 @@
+-var items = ['home', 'about us', 'our approch', 'our work']
+
+nav.menu
+    each item in items 
+        if item === 'home'
+            a.menu__link.menu__link--active(href='#')= item
+        else 
+            a.menu__link(href='#')= item

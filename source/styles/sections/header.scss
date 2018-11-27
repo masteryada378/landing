@@ -1,0 +1,65 @@
+.header{
+    &__top{
+        background-color: #f0f2f4;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    &__bottom{
+        padding: 41px 0px 32px;
+        
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    
+    &__button{
+        display: inline-block;
+        font-size: 1rem;
+        
+    }
+}
+
+
+
+
+.contact{
+    text-align: right;
+
+    &__text{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    &__icon{
+        font-size: 1.1rem;
+        vertical-align: middle;
+    }
+
+    &__item{
+        display: inline-block;
+        vertical-align: middle;
+        color: $text-main;
+        text-decoration: none;
+
+        &--phone{
+            border-right: 1px solid #e2e2e2;
+            padding:0px 12px;
+        }
+        &--mail{
+            padding: 8px 8px 10px 22px;
+            
+            .contact__icon{
+                font-size: 1.2rem;    
+            }
+        }
+        .fa-facebook-f{
+            padding: 5px 9px 5px;
+            border-radius: 3px;
+            color: #fff;
+            background-color: #1287bf;
+        }
+    }
+}
+
