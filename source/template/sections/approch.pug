@@ -1,0 +1,20 @@
+mixin listApproch(number, url)
+    li.approch__item
+        .approch__image
+            img.approch__picture(src= url alt='Photoapparat')
+            .approch__step step
+        .approch__text
+            h4.approch__title= number 
+            p.approch__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+
+
+section.approch
+    .container
+        .title
+            h3.title__header our approch
+            .title__description Check Our approches step by step ( how we do it )
+        ul.approch__list
+            +listApproch('Step 1 : Heading Here','images/step-1.jpg')
+            +listApproch('Step 2 : Heading Here','images/step-2.jpg')
+            +listApproch('Step 3 : Heading Here','images/step-3.jpg')
+            +listApproch('Step 4 : Heading Here','images/step-4.jpg')

@@ -1,0 +1,85 @@
+.approch{
+    background-color: #f3f3f3;
+    padding: 60px 0 132px 0;
+    
+    &__list{
+        padding: 0;
+        margin: 0;
+        counter-reset: count;
+    }
+
+    &__item{
+        display: flex;
+        background-color: white;
+        margin-bottom: 40px;
+        box-shadow: -1px -1px 4px 1px #e5e5e5;
+        border-radius: 3px;
+
+        &:nth-child(even){
+            flex-direction: row-reverse;
+            
+            .approch__text{
+                text-align: right;
+                padding: 70px 90px 37px 70px;
+            }
+
+            .approch__step{
+                left: -53px;
+            }
+        }
+    }
+
+    &__image{
+        max-width: 340px;
+        max-height: 235px;
+        position: relative;
+    }
+
+    &__picture{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__step{
+        @include centererY();
+        right: -53px;
+        color: #fff;
+        font-size: 1.25rem;
+        width: 105px;
+        height: 105px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        background-color: $theme-color;
+        text-align: center;
+
+        &:before{
+            content: counter(count);
+            counter-increment: count;
+            display: block;
+            font-size: 3.75rem;
+            font-family: $ff-steps;
+            line-height: 0.9;
+            margin-top: 10px;
+        }
+    }
+
+    &__text{
+        padding: 70px 70px 37px 90px;
+        width: 67%;
+    }
+
+    &__title{
+        margin: 0px;
+        margin-bottom: 8px;
+        font-size: 1.125rem;
+        font-family: $ff-main-bold;
+    }
+
+    &__content{
+        margin: 0;
+        line-height: 1.5;
+        font-size: 0.9rem;
+
+    }
+}
