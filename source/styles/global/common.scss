@@ -1,4 +1,17 @@
 .container{
     max-width: 1024px;
     margin: auto;
+    
+    @media (max-width: 1030px) {
+        width: 98%;
+    }
+}
+section.about, 
+section.approch,
+section.work,
+.footer .footer__top,
+section.form{
+    @media (max-width: 860px) {
+        padding: 30px 0 20px;
+    }
 }

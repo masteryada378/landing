@@ -1,6 +1,6 @@
 .approch{
     background-color: #f3f3f3;
-    padding: 60px 0 132px 0;
+    padding: 97px 0 95px 0;
     
     &__list{
         padding: 0;
@@ -15,12 +15,32 @@
         box-shadow: -1px -1px 4px 1px #e5e5e5;
         border-radius: 3px;
 
+        @media (max-width: 550px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         &:nth-child(even){
             flex-direction: row-reverse;
             
+            @media (max-width: 550px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .approch__text{
                 text-align: right;
                 padding: 70px 90px 37px 70px;
+            
+                @media (max-width: 860px) {
+                    padding: 45px 60px 10px 10px;
+                }
+                @media (max-width: 550px) {
+                    padding: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+
             }
 
             .approch__step{
@@ -33,6 +53,12 @@
         max-width: 340px;
         max-height: 235px;
         position: relative;
+
+        @media (max-width: 550px){
+            height: calc(235px / 1.4);
+            width: calc(340px / 1.4);
+            margin-top: 10px;
+        }
     }
 
     &__picture{
@@ -52,6 +78,10 @@
         border-radius: 5px;
         background-color: $theme-color;
         text-align: center;
+        
+        @media (max-width: 550px) {
+            display: none;
+        }
 
         &:before{
             content: counter(count);
@@ -67,6 +97,16 @@
     &__text{
         padding: 70px 70px 37px 90px;
         width: 67%;
+
+        @media (max-width: 860px) {
+            padding: 45px 10px 10px 60px;
+        }
+        @media (max-width: 550px) {
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        
     }
 
     &__title{
@@ -82,4 +122,11 @@
         font-size: 0.9rem;
 
     }
+
+    .title__description{
+        @media (max-width: 330px){
+            font-size: 1rem;
+        }
+    }
 }
+

@@ -1,0 +1,105 @@
+.form{
+    padding: 100px 0 112px;
+    background-color: #1287bf;
+    
+    .title{
+        color: #fff;
+        margin-bottom: 12px;
+        &:after{
+            display: none;
+        }
+    }
+
+    &__button{
+        border: 2px solid #fff;
+        height: 58px;
+        width: 58px;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 55px;
+        position: relative;
+
+        .arrow-down{
+            padding: 20px;
+            color: #fff;    
+
+            .fas{
+                font-size: 2.5rem;
+                font-weight: 600;
+                @include centererXY();
+            }
+        }
+
+        
+    }
+
+    &__close-button{
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        background-color: $theme-color;
+        position: absolute;
+        top: -20px;
+        right: -16px;
+        height: 46px;
+        width: 46px;
+        color: #fff;
+
+        @media (max-width: 550px){
+            top: -12px;
+            right: -8px;
+        }
+    }
+
+    &__text{
+        font-size: 0.9375rem;
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 33px;
+    }
+
+    &__wrapper{
+        width: 67%;
+        color: #828282;
+        background-color: #fff;
+        margin: auto;
+        padding: 50px 60px 68px;
+        text-align: center;
+        position: relative;
+
+        @media (max-width: 860px) {
+            width: 95%;
+            padding: 27px 14px 27px;
+        }
+
+        &:before{
+            content: "";
+            @include centererX();
+            border: 30px solid transparent;
+            border-bottom: 30px solid #fff;
+            top: -60px;
+        }
+    }
+
+    &__input{
+        display: block;
+        margin: auto;
+        padding: 16px;
+        width: 78%;
+        border-radius: 3px;
+        border: 1px solid #d8d8d8;
+        font-size: 0.875rem;
+        margin-bottom: 9px;
+
+        @media (max-width: 860px) {
+            width: 90%;
+        }
+    }
+    .button--red{
+        margin-top: 26px;
+        font-size: 0.9375rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 14px 30px;
+    }
+}

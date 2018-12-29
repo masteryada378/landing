@@ -1,0 +1,75 @@
+.footer{
+    &__top{
+        background-color: #2a2a2a;
+        padding: 86px 0 82px;
+    }
+    
+    &__copyright{
+        background-color: #515151;
+        text-align: center;
+        color: #cecece;
+        padding: 25px 0 30px;
+        font-family: $ff-main;
+        font-size: 0.94rem;
+    }
+
+    &__title{
+        text-align: center;
+        color: #fff;
+        font-size: 1.8rem;
+        font-family: $ff-main-bold;
+        margin: 0 0 10px;
+    }
+
+    &__social{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    &__inscription{
+        text-align: center;
+        margin: 0;
+        padding: 23px 23px 30px;
+        color: #919191;
+        font-size: 0.9rem;
+    }
+
+    &__input{
+        display: block;
+        margin: auto;
+        background-color: #515151;
+        color: #cecece;
+        width: 100%;
+        padding: 19px;
+        max-width: 680px;
+        border: 0;
+        font-size: 0.9rem;
+
+    }
+
+    &__link{
+        position: relative;
+        background-color: #2a2a2a;
+        display: block;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        border: 2px solid #515151;
+        border-radius: 3px;
+        padding: 0;
+        &:hover{
+            border: 2px solid $theme-color;
+        }
+    
+        .fab{
+            font-size: 1.5rem;
+            color: #fff;
+            @include centererXY();
+        }
+    
+    }
+}
+
+
+

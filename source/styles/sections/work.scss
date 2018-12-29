@@ -1,0 +1,57 @@
+.work{
+    background-color: $theme-color;
+    padding: 110px 0 108px;
+    color: #fff;
+
+    &__list{
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item{
+        height: 255px;
+        width: 255px;
+
+        @media(max-width: 1030px ) {
+            height: calc(255px / 1.2);
+            width: calc(255px / 1.2);
+        }
+        
+        &--text{
+            position: relative;
+            text-align: center;
+            font-family: $ff-main-bold;
+            background-color: #f35e59;
+            padding: 130px 40px 75px;  
+            
+            @media (max-width: 1030px) {
+                padding: 130px 20px 75px;
+            }
+
+            &:before{
+                content: "";
+                top:74px;
+                @include sprite($work-item);
+                @include centererX();
+            }
+        }
+    }
+    &__picture{
+        width: 100%;
+        height: 100%;
+    }
+    &__name{
+        font-size: 1.62rem;
+        margin: 0;
+    }
+    &__product{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .title:after{
+        background-color: #fff;
+    }
+
+}

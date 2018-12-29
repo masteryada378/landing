@@ -6,22 +6,40 @@
 
     &__bottom{
         padding: 41px 0px 32px;
+
+        @media (max-width: 360px){
+            padding: 15px 0px 10px;
+        }
         
         .container{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
+            @media (max-width: 860px) {
+                flex-direction: column;    
+            }
         }
     }
     
     &__button{
         display: inline-block;
         font-size: 1rem;
+
+        @media (max-width: 860px) {
+        display: block;
+        margin: auto;
+        }
         
     }
 }
 
-
+.logo__img{
+    @media (max-width: 550px){
+        width: calc(242px / 1.4);
+        height: calc(51px / 1.4);
+    }
+}
 
 
 .contact{

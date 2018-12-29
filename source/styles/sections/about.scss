@@ -1,15 +1,27 @@
 .about{
-    padding: 72px 0 85px;
+    padding: 102px 0 85px;
     text-align: center;
 
     &__list{
         display: flex;
         justify-content: space-between;
         padding: 0px 50px 0 50px;
+
+        @media (max-width: 550px) {
+            flex-direction: column;
+        }
+
     }
 
     &__item{
         width: 27%;
+
+        @media (max-width: 860px) {
+            width: 30%;
+        }
+        @media (max-width: 550px) {
+            width: 90%;
+        }
     }
 
     &__subtitle{

@@ -3,6 +3,11 @@
     min-height: 590px; 
     padding: 174px 0;
     text-align: center;
+
+    @media (max-width: 550px) {
+        min-height: 200px;
+        padding: 72px 0;
+    }
     
     &__title{
         color: white;
@@ -25,6 +30,11 @@
         font-family: $ff-main-bold;
         font-size: 1.5rem;
         padding: 25px 38px 18px;
+
+        @media (max-width: 550px) {
+            font-size: 1.1rem;
+            padding: 10px 15px 7px;
+        }
     }
     
 }
